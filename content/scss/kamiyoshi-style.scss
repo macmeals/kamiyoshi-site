@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+//基本的かつ全体的に当てるStyle（リセットCSS）
+@use "../scss/foundation/reset";
+@use "../scss/foundation/base";
