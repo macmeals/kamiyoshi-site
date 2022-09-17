@@ -1,0 +1,29 @@
+// ハンバーガーボタンの3本線
+.c-hambergerbutton {
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+    &__bar {
+      display: block;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      background:white;
+
+    }
+    &__bar:nth-child(1)  {
+      top: 0;
+    }
+
+    &__bar:nth-child(2)  {
+      top: 50%;
+    }
+
+    &__bar:nth-child(3)  {
+      top: 100%;
+    }
+
+
+}

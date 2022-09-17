@@ -1,0 +1,45 @@
+.p-firstview {
+    width: 100%;
+    height: 650px;
+    background:url(/content/img/firstview.png) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+}
+
+.p-topnews {
+    width: 100%;
+    height: 500px;
+    background-color: #232121;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__contents {
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+
+    &__link {
+      width: 760px;
+      display: flex;
+    }
+
+}
+
+.p-articleheader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    //文字の重なり
+    position: relative;
+    margin: 40px 0 40px 0;
+
+    &__text {
+        //文字の重なり
+        position: absolute;
+        top: 55px;
+    }
+}

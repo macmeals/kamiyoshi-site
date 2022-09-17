@@ -3,3 +3,19 @@
 //基本的かつ全体的に当てるStyle（リセットCSS）
 @use "../scss/foundation/reset";
 @use "../scss/foundation/base";
+@use '../scss/foundation/mixin';
+
+//Object-Project
+@use '../scss/object/project/p-header';
+@use '../scss/object/project/p-main';
+
+
+//Object-Component
+@use '../scss/object/component/c-logo';
+@use "../scss/object/component/c-hambergerbutton";
+@use "../scss/object/component/c-photo";
+@use '../scss/object/component/c-illust';
+@use '../scss/object/component/c-underline';
+
+//object-utility
+@use '../scss/object/utility/u-margin';

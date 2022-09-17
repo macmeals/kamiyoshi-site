@@ -3,22 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/kamiyoshi-style.css" />
+    <!-- goole fontをインポート -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
     <title>堺宿天和KAMIYOSHI</title>
 </head>
 <body>
-    <main>
-        <header>
-          
-        </header>
+    <header class="p-header">
+        <div class="p-header__pc">
+            <img class="c-logo__header" src="./img/headerLogo.png" alt="天和のHeaderLogo">    
+            <ul class="p-header__list">
+                <li><a class="c-underline__white" href="#">天和の魅力</a></li>
+                <li><a class="c-underline__white" href="#">プラン</a></li>
+                <li><a class="c-underline__white" href="#">ムービー</a></li>
+                <li><a class="c-underline__white" href="#">アクセス</a></li>
+                <li><a class="c-underline__white" href="#">心斎橋観光</a></li>
+                <li><a class="c-underline__white" href="#">お問い合わせ</a></li>
+            </ul>
+        </div>
+        <div class="p-header__mobile">
+            <button class="c-hambergerbutton">
+                <span class="c-hambergerbutton__bar"></span>
+                <span class="c-hambergerbutton__bar"></span>
+                <span class="c-hambergerbutton__bar"></span>
+            </button>
+        </div>
+    </header>
+    <div>
         <main>
+            <div class="p-firstview">
+                <img class="c-logo__firstview u-margin__left80" src="./img/kamiyoshi_logo.png" alt="天和のロゴ">
+            </div>
+            <article class="p-topnews">
+                <div class="p-articleheader">
+                    <img class="c-illust__ecllipse" src="./img/ellipse.png" alt="サブタイトルの画像">
+                    <h3 class="p-articleheader__text">お知らせ</h3>
+                </div>
+                <div class="p-topnews__contents">
+                    <div class="p-topnews__link">
+                        <p>2022.6.30</p>
+                        <a class="c-underline__white u-margin__left80" href="#">ホームページをリニューアルしました</a>
+                    </div>
+                    <div class="p-topnews__link">
+                        <p>2022.6.30</p>
+                        <a class="c-underline__white u-margin__left80" href="#">新型コロナウィルスの対応について</a>
+                    </div>
+                    <div class="p-topnews__link">
+                        <p>2022.6.30</p>
+                        <a class="c-underline__white u-margin__left80" href="#">和牛プランを始めました。</a>
+                    </div>
+                </div>
+                <a class="c-underline__white u-margin__top50" href="#">他のお知らせはこちらから</a>
 
+            
+            </article>
         </main>
-        <footer>
+        <aside>
 
-        </footer>
-    </main>
-    <aside>
+        </aside>
+    </div>
+    <footer>
 
-    </aside>
+    </footer>
 </body>
 </html>
