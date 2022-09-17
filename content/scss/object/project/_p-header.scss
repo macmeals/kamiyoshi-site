@@ -1,0 +1,48 @@
+@use "../../foundation/mixin" as mixin;
+
+
+.p-header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+        @include mixin.smartphone {
+          height: 50px; 
+        }
+
+
+    &__pc {
+        height: 100px;
+        width: 920px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+            @include mixin.smartphone {
+               display: none; 
+            }
+    }
+
+    &__list {
+        width:680px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    &__mobile {
+        width: 100%;
+        @include mixin.pc {
+           display: none;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 25px;
+        
+    }
+
+   
+        
+
+}
