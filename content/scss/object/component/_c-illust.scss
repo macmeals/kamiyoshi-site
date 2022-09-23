@@ -1,6 +1,26 @@
+// イラストのあしらいのスタイリング（文字の位置調整のCSSは適応しない事）
+
 .c-illust {
     &__ecllipse {
        width: 80px;
        height: 80px;
     }
+
+    &__contentcloud {
+      width: 208px;
+      height: 78px;
+    }
+
+    &__loctioncloud {
+      width: 200px;
+      height: 54px;
+    }
+
+    &__loctionflower {
+      width: 120px;
+      height: 120px;
+    }
+
+
+    
 }

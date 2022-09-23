@@ -1,3 +1,5 @@
+@use "../../foundation/mixin" as mixin;
+
 .p-firstview {
     width: 100%;
     height: 650px;
@@ -10,9 +12,7 @@
     width: 100%;
     height: 500px;
     background-color: #232121;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include mixin.verticalcenter;
 
     &__contents {
       height: 120px;
@@ -25,6 +25,8 @@
     &__link {
       width: 760px;
       display: flex;
+      height: 25px;
+      line-height: 25px;
     }
 
 }
@@ -42,4 +44,98 @@
         position: absolute;
         top: 55px;
     }
+}
+
+.p-advantage {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    @include mixin.verticalcenter;
+
+    &__point {
+        width: 100%;
+        height: 160px;
+        @include mixin.verticalcenter;
+        position: relative;
+    }
+
+    &__pointtext {
+        font-size: 24px;       
+        position: absolute;
+        top: 50px;
+        @include mixin.verticalcenter;
+    }
+
+    &__loction {
+        width: 100%;
+        height: 750px;
+        background:url(/content/img/goldring.png) center center / 700px 700px no-repeat;
+        @include mixin.verticalcenter;
+    }
+
+    &__airport {
+        @include mixin.verticalcenter;
+    }
+
+    &__loctiontext {
+        @include mixin.verticalcenter;
+    }
+
+    &__shinsaibashi {
+        display: flex;
+        width: 920px;
+        justify-content: space-between;
+
+    }
+
+    &__town {
+        width: 280px;
+        @include mixin.verticalcenter;
+        position: relative;
+    }
+
+    &__flowerleft {
+        position: absolute;
+        top: -62px;
+        left: -65px;
+        z-index: 1;
+    }
+
+    &__flowerright {
+        position: absolute;
+        top: -62px;
+        right: -65px;
+        
+    }
+
+    &__photo {
+        z-index: 2;
+    }
+
+    &__gourmet {
+      display: flex;
+      width: 920px;
+
+    }
+
+    &__gourmetext {
+      width: 480px;
+      @include mixin.verticalcenter;
+      justify-content: center;
+    }
+
+}
+
+.p-swiper {
+    width: 90vw;
+    height: 470px;
+
+    &__wrapper {
+        @include mixin.verticalcenter;
+    }
+
+    &__thumbnail {
+        width: 440px;
+    }
+
 }

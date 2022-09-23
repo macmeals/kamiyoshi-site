@@ -1,0 +1,36 @@
+.swiper-button-prev,
+.swiper-button-next {
+  height: 80px;
+  width: 40px;
+}
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 80px;
+  margin: auto;
+  width: 40px;
+
+}
+
+.swiper-button-prev:after {
+  background-image: url(../img/swiper-preview.png);
+}
+ 
+.swiper-button-next:after {
+  background-image: url(../img/swiper-next.png);
+}
+
+.swiper-slide-visible {
+  opacity: .5;
+}
+
+.swiper-slide-thumb-active { 
+      opacity: 1;
+  }
+
+
+
+

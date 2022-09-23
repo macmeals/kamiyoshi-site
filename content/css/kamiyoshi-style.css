@@ -407,6 +407,10 @@ h3 {
   font-size: 36px;
 }
 
+p {
+  line-height: 1.7;
+}
+
 /* PCはWidthが691pxより大きい */
 /* スマホはWidthが690pxより小さい */
 .p-header {
@@ -479,6 +483,8 @@ h3 {
 .p-topnews__link {
   width: 760px;
   display: flex;
+  height: 25px;
+  line-height: 25px;
 }
 
 .p-articleheader {
@@ -492,6 +498,113 @@ h3 {
 .p-articleheader__text {
   position: absolute;
   top: 55px;
+}
+
+.p-advantage {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-advantage__point {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.p-advantage__pointtext {
+  font-size: 24px;
+  position: absolute;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-advantage__loction {
+  width: 100%;
+  height: 750px;
+  background: url(/content/img/goldring.png) center center/700px 700px no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-advantage__airport {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-advantage__loctiontext {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-advantage__shinsaibashi {
+  display: flex;
+  width: 920px;
+  justify-content: space-between;
+}
+
+.p-advantage__town {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.p-advantage__flowerleft {
+  position: absolute;
+  top: -62px;
+  left: -65px;
+  z-index: 1;
+}
+
+.p-advantage__flowerright {
+  position: absolute;
+  top: -62px;
+  right: -65px;
+}
+
+.p-advantage__photo {
+  z-index: 2;
+}
+
+.p-advantage__gourmet {
+  display: flex;
+  width: 920px;
+}
+
+.p-advantage__gourmetext {
+  width: 480px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-swiper {
+  width: 90vw;
+  height: 470px;
+}
+
+.p-swiper__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-swiper__thumbnail {
+  width: 440px;
 }
 
 .c-logo__header {
@@ -536,9 +649,47 @@ h3 {
   height: 650px;
 }
 
+.c-photo__loction {
+  width: 280px;
+  height: 200px;
+}
+
+.c-photo__wagu {
+  width: 440px;
+  height: 660px;
+}
+
+.c-photo__topswiper {
+  width: 920px;
+  height: 450px;
+  object-fit: cover;
+  box-shadow: 20px 20px #57451C;
+}
+
+.c-photo__topthumbnail {
+  width: 120px;
+  height: 120px;
+  box-shadow: 10px 10px #57451C;
+}
+
 .c-illust__ecllipse {
   width: 80px;
   height: 80px;
+}
+
+.c-illust__contentcloud {
+  width: 208px;
+  height: 78px;
+}
+
+.c-illust__loctioncloud {
+  width: 200px;
+  height: 54px;
+}
+
+.c-illust__loctionflower {
+  width: 120px;
+  height: 120px;
 }
 
 .c-underline__white {
@@ -562,11 +713,28 @@ h3 {
   transform: scale(1, 1);
 }
 
+.c-text__name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .u-margin__top50 {
   margin-top: 50px;
 }
 
+.u-margin__top75 {
+  margin-top: 75px;
+}
+
+.u-margin__top125 {
+  margin-top: 125px;
+}
+
 .u-margin__left80 {
   margin-left: 80px;
+}
+
+.u-margin__bottom6 {
+  margin-bottom: 6px;
 }
 /*# sourceMappingURL=kamiyoshi-style.css.map */

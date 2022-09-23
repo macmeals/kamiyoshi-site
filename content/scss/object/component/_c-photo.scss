@@ -1,6 +1,28 @@
+//写真のスタイリング（位置を調整するスタイリングは使わないこと
+
 .c-photo {
     &__firstview {
        width: 100vw;
        height: 650px;
+    }
+    &__loction {
+        width: 280px;
+        height: 200px;
+    }
+    &__wagu {
+        width: 440px;
+        height: 660px;
+    }
+    &__topswiper {
+        width: 920px;
+        height: 450px;
+        object-fit: cover;
+        box-shadow: 20px 20px #57451C;
+    }
+    &__topthumbnail {
+        width: 120px;
+        height: 120px;
+        box-shadow: 10px 10px #57451C;
+
     }
 }
