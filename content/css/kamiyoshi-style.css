@@ -592,6 +592,26 @@ p {
   justify-content: center;
 }
 
+.p-advantage__beeftext {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-advantage__toproom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-between;
+}
+
+.p-advantage__bedroom {
+  width: 920px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .p-swiper {
   width: 90vw;
   height: 470px;
@@ -672,6 +692,12 @@ p {
   box-shadow: 10px 10px #57451C;
 }
 
+.c-photo__toproom {
+  width: 420px;
+  height: 260px;
+  box-shadow: 20px 20px #57451C;
+}
+
 .c-illust__ecllipse {
   width: 80px;
   height: 80px;
@@ -715,7 +741,6 @@ p {
 
 .c-text__name {
   font-size: 24px;
-  font-weight: bold;
 }
 
 .u-margin__top50 {
@@ -724,6 +749,10 @@ p {
 
 .u-margin__top75 {
   margin-top: 75px;
+}
+
+.u-margin__top100 {
+  margin-top: 100px;
 }
 
 .u-margin__top125 {

@@ -124,6 +124,24 @@
       justify-content: center;
     }
 
+    &__beeftext {
+      @include mixin.verticalcenter;
+    }
+
+    &__toproom {
+      @include mixin.verticalcenter;
+      height: 600px;
+      justify-content: space-between;
+    }
+
+    &__bedroom {
+      width: 920px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+
 }
 
 .p-swiper {
