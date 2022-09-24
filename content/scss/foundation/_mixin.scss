@@ -15,3 +15,10 @@ $smartphone: 690px; /* スマホはWidthが690pxより小さい */
       @content;
     }
 }
+
+// 縦中央寄せ
+@mixin verticalcenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

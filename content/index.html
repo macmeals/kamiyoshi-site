@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/kamiyoshi-style.css" />
+    <!-- SwiperのCSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <!-- goole fontをインポート -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,9 +59,98 @@
                     </div>
                 </div>
                 <a class="c-underline__white u-margin__top50" href="#">他のお知らせはこちらから</a>
-
-            
             </article>
+            <article class="p-advantage">
+                <div class="p-articleheader">
+                    <img class="c-illust__ecllipse" src="./img/ellipse.png" alt="サブタイトルの画像">
+                    <h3 class="p-articleheader__text">天和の魅力</h3>
+                </div>
+                <div class="p-advantage__point u-margin__top125">
+                    <img class="c-illust__contentcloud" src="./img/contentscloud.png" alt="説明用のクラウド">
+                    <div class="p-advantage__pointtext">
+                        <p>今までに培ってきた送迎ノウハウをいかし貴方の旅を</p>
+                        <p>完全サポートいたします。</p>
+                        <p>送迎のお車で全ての観光地を巡る事が可能です。</p>
+                    </div>
+                </div>
+                <div class="p-advantage__loction u-margin__top50">
+                    <div class="p-advantage__airport">
+                        <img  class="c-illust__loctioncloud u-margin__bottom6" src="./img/locationwave.png" alt="関空用の波のあしらい">
+                        <img  class="c-photo__loction" src="./img/airport.png" alt="関空">
+                        <p class="c-text__name">関西国際空港</p>
+                    </div>
+                    <div class="p-advantage__loctiontext u-margin__top50 ">
+                        <p>関西国際空港、心斎橋、ユニバーサル</p>
+                        <p>スタジオジャパン等、いつでも</p>
+                        <p>どこでも車で送迎可能。</p>
+                        <p>他の場所もお気軽にご相談下さい。</p>
+                    </div>
+                    <div class="p-advantage__shinsaibashi">
+                        <div class="p-advantage__town">
+                            <img class="p-advantage__flowerleft c-illust__loctionflower" src="./img/locationflower.png" alt="心斎橋用の花のあしらい">
+                            <img class="p-advantage__photo c-photo__loction" src="./img/shinsaibachi.png" alt="心斎橋の写真">
+                            <p class="c-text__name">心斎橋</p>
+                        </div>
+                        <div class="p-advantage__town">
+                            <img class="p-advantage__flowerright c-illust__loctionflower" src="./img/locationflower.png" alt="心斎橋用の花のあしらい">
+                            <img class="c-photo__loction" src="./img/Univasalstudio.png" alt="ユニバーサルスタジオ写真">
+                            <p class="c-text__name">ユニバーサルスタジオ</p>
+                            <p class="c-text__name">ジャパン</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-advantage__point u-margin__top125">
+                    <img class="c-illust__contentcloud" src="./img/contentscloud.png" alt="説明用のクラウド">
+                    <div class="p-advantage__pointtext">
+                        <p>旅の夜は当宿自慢の和牛をお楽しみ頂けます。</p>
+                    </div>
+                </div>
+                
+                <div class="swiper p-swiper">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide  p-swiper__wrapper">
+                            <img class="c-photo__topswiper" src="./img/beef_1.png" alt="和牛の写真1枚目">
+                        </div>
+                        <div class="swiper-slide  p-swiper__wrapper">
+                            <img class="c-photo__topswiper" src="./img/beef_2.png" alt="和牛の写真2枚目">
+                        </div>
+                        <div class="swiper-slide  p-swiper__wrapper">
+                            <img class="c-photo__topswiper" src="./img/beef_3.png" alt="和牛の写真3枚目">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>                   
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper p-swiper__thumbnail u-margin__top50">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="c-photo__topthumbnail" src="./img/beef_1.png" alt="Topサムネイル1枚目"></div>
+                        <div class="swiper-slide"><img class="c-photo__topthumbnail" src="./img/beef_2.png" alt="Topサムネイル2枚目"></div>
+                        <div class="swiper-slide"><img class="c-photo__topthumbnail" src="./img/beef_3.png" alt="Topサムネイル3枚目"></div>
+                    </div>
+                </div>
+                <div class="p-advantage__beeftext u-margin__top50">
+                    <p>最上級鹿児島産黒毛和牛の和牛鍋をご用意。</p>
+                    <p>是非ご賞味下さい。</p>
+                    <p>テイクアウト用のお弁当もご用意できます。</p>
+                </div>
+                <a class="c-underline__white c-text__name u-margin__top100" href="#">プランの詳細はこちらから</a>
+                <div class="p-advantage__point u-margin__top125">
+                    <img class="c-illust__contentcloud" src="./img/contentscloud.png" alt="説明用のクラウド">
+                    <div class="p-advantage__pointtext">
+                        <p>旅でお疲れになった体を癒すプライベート空間。</p>
+                        <p>ご自宅の様に寛ぐ事ができます。</p>
+                    </div>
+                </div>
+                <div class="p-advantage__toproom">
+                    <div class="p-advantage__bedroom">
+                        <img class="c-photo__toproom" src="./img/roombed1.png" alt="室内の1枚目">
+                        <img class="c-photo__toproom" src="./img/roombed1.png" alt="室内の1枚目">
+                    </div>
+                    <img class="c-photo__toproom" src="./img/roombed2.png" alt="">
+                </div>
+                <a class="c-underline__white c-text__name u-margin__top100" href="#">プランの詳細はこちらから</a>
+            </article>
+    
         </main>
         <aside>
 
@@ -67,5 +159,8 @@
     <footer>
 
     </footer>
+    <!-- //swiperの読み込み -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>
