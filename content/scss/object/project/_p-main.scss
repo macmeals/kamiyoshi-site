@@ -37,7 +37,6 @@
     justify-content: center;
     //文字の重なり
     position: relative;
-    margin: 40px 0 40px 0;
 
     &__text {
         //文字の重なり
@@ -113,35 +112,49 @@
     }
 
     &__gourmet {
-      display: flex;
-      width: 920px;
+        display: flex;
+        width: 920px;
 
     }
 
     &__gourmetext {
-      width: 480px;
-      @include mixin.verticalcenter;
-      justify-content: center;
+        width: 480px;
+        @include mixin.verticalcenter;
+        justify-content: center;
     }
 
     &__beeftext {
-      @include mixin.verticalcenter;
+        @include mixin.verticalcenter;
     }
 
     &__toproom {
-      @include mixin.verticalcenter;
-      height: 600px;
-      justify-content: space-between;
+        @include mixin.verticalcenter;
+        height: 600px;
+        justify-content: space-between;
     }
 
     &__bedroom {
-      width: 920px;
-      display: flex;
-      justify-content: space-between;
+        width: 920px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-sns {
+    width: 100%;
+    height: 100%;
+    background-color: #232121;
+    @include mixin.verticalcenter;
+
+    &__contents {
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
     }
 
-
-
+    &__tiktok {
+      @include mixin.verticalcenter;
+    }
 }
 
 .p-swiper {
@@ -157,3 +170,5 @@
     }
 
 }
+
+

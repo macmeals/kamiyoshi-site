@@ -492,7 +492,6 @@ p {
   display: flex;
   justify-content: center;
   position: relative;
-  margin: 40px 0 40px 0;
 }
 
 .p-articleheader__text {
@@ -612,6 +611,27 @@ p {
   justify-content: space-between;
 }
 
+.p-sns {
+  width: 100%;
+  height: 100%;
+  background-color: #232121;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-sns__contents {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-sns__tiktok {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .p-swiper {
   width: 90vw;
   height: 470px;
@@ -698,6 +718,10 @@ p {
   box-shadow: 20px 20px #57451C;
 }
 
+.c-photo__tiktok {
+  box-shadow: 20px 20px #57451C;
+}
+
 .c-illust__ecllipse {
   width: 80px;
   height: 80px;
@@ -716,6 +740,11 @@ p {
 .c-illust__loctionflower {
   width: 120px;
   height: 120px;
+}
+
+.c-illust__topfan {
+  width: 120px;
+  height: 50px;
 }
 
 .c-underline__white {
@@ -765,5 +794,13 @@ p {
 
 .u-margin__bottom6 {
   margin-bottom: 6px;
+}
+
+.u-margin__bottom6 {
+  margin-bottom: 6px;
+}
+
+.u-margin__bottom90 {
+  margin-bottom: 90px;
 }
 /*# sourceMappingURL=kamiyoshi-style.css.map */
