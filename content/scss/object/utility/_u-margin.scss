@@ -1,7 +1,16 @@
 .u-margin {
+    &__top40 {
+        margin-top: 40px;
+    }
+
     &__top50 {
         margin-top: 50px;
     }
+
+    &__top60 {
+        margin-top: 60px;
+    }
+
     &__top75 {
         margin-top: 75px;
     }
@@ -24,6 +33,10 @@
 
     &__bottom90 {
         margin-bottom: 90px;
+    }
+
+    &__topbottom40 {
+        margin: 40px 0 40px 0;
     }
 
 
