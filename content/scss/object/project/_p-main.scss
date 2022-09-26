@@ -157,6 +157,13 @@
     }
 }
 
+.p-plan {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    @include mixin.verticalcenter;
+}
+
 .p-swiper {
     width: 90vw;
     height: 470px;
