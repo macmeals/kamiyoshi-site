@@ -1,0 +1,11 @@
+@use "../foundation/mixin" as mixin;
+
+.l-header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+        @include mixin.smartphone {
+          height: 50px; 
+        }
+}
