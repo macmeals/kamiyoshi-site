@@ -1,15 +1,6 @@
 @use "../../foundation/mixin" as mixin;
 
-
 .p-header {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-
-        @include mixin.smartphone {
-          height: 50px; 
-        }
-
 
     &__pc {
         height: 100px;

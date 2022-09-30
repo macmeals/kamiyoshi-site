@@ -5,6 +5,16 @@
 @use "../scss/foundation/base";
 @use '../scss/foundation/mixin';
 
+//layout(全体的なレイアウト）
+@use '../scss/layout/l-header';
+@use '../scss/layout/l-wrapper';
+@use '../scss/layout/l-container';
+@use '../scss/layout/l-main';
+@use '../scss/layout/l-side';
+@use '../scss/layout/l-footer';
+
+
+
 //Object-Project
 @use '../scss/object/project/p-header';
 @use '../scss/object/project/p-main';
@@ -17,6 +27,8 @@
 @use '../scss/object/component/c-illust';
 @use '../scss/object/component/c-underline';
 @use '../scss/object/component/c-text';
+@use '../scss/object/component/c-form';
 
 //object-utility
 @use '../scss/object/utility/u-margin';
+@use '../scss/object/utility/u-padding';
