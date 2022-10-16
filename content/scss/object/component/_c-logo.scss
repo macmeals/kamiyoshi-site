@@ -1,14 +1,22 @@
 //天和のロゴのスタイリング（大きさ等）
 
+@use "../../foundation/mixin" as mixin;
+
 .c-logo {
     &__header {
-       width: 69px;
-       height: 40px;
+        width: 69px;
+        height: 40px;
       
     }
     &__firstview {
-       width: 330px;
-       height: 330px;
+        width: 330px;
+        height: 330px;
+
+            @include mixin.smartphone {
+                width: 90px;
+                height: 90px;  
+
+            }
     }
 
 }

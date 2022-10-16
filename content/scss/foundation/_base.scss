@@ -1,5 +1,8 @@
-html { color: white;
-  font-family: 'Zen Old Mincho', serif;
+@use "./mixin" as mixin;
+
+
+html {   color: white;
+         font-family: 'Zen Old Mincho', serif;
 }
 
 header {
@@ -9,9 +12,18 @@ header {
 
 h3 {
   font-size: 36px;
+     @include mixin.smartphone {
+         font-size: 20px;
+     }
+
 }
 
-p {line-height: 1.7;
+p ,a {line-height: 1.7;
+   font-size: 16px;
+
+    @include mixin.smartphone {
+      font-size: 14px;
+    }
   
 }
 

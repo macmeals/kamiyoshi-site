@@ -1,14 +1,24 @@
 // イラストのあしらいのスタイリング（文字の位置調整のCSSは適応しない事）
 
+@use '../../foundation/mixin' as mixin;
+
 .c-illust {
     &__ecllipse {
-       width: 80px;
-       height: 80px;
+        width: 80px;
+        height: 80px;
+            @include mixin.smartphone {
+                width: 25px;
+                height: 25px;
+              }
     }
 
     &__contentcloud {
-      width: 208px;
-      height: 78px;
+        width: 208px;
+        height: 78px;
+            @include mixin.smartphone {
+                width: 100px;
+                height: 38px;
+            }
     }
 
     &__loctioncloud {
