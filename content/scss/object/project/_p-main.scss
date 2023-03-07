@@ -6,6 +6,10 @@
     background:url(/content/img/firstview.png) no-repeat center/cover;
     display: flex;
     align-items: center;
+
+        @include mixin.smartphone {
+           height: 250px;
+        }
 }
 
 .p-topnews {
@@ -14,20 +18,34 @@
     background-color: #232121;
     @include mixin.verticalcenter;
 
-    &__contents {
-      height: 120px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+        @include mixin.smartphone {
+            height: 410px;
+        }
+
+        &__contents {
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+                
+               @include mixin.smartphone {
+                  height: 170px;
+               }
+
+        }
 
 
-    &__link {
-      width: 760px;
-      display: flex;
-      height: 25px;
-      line-height: 25px;
-    }
+        &__link {
+          width: 760px;
+          display: flex;
+          height: 25px;
+          line-height: 25px;
+
+              @include mixin.smartphone {
+                  align-items: center;
+                  flex-direction: column;
+              }
+        }
 
 }
 
@@ -42,6 +60,10 @@
         //文字の重なり
         position: absolute;
         top: 55px;
+
+        @include mixin.smartphone {
+          top: 15px;
+       }
     }
 
     &__accesstext {
@@ -61,13 +83,26 @@
         height: 160px;
         @include mixin.verticalcenter;
         position: relative;
+            @include mixin.smartphone {
+                height: 100px;
+            }
     }
 
-    &__pointtext {
-        font-size: 24px;       
+    &__pointtext {    
         position: absolute;
         top: 50px;
+
+        > P {
+            font-size: 24px;  
+            @include mixin.smartphone {
+               font-size: 16px;
+            }
+        }
         @include mixin.verticalcenter;
+            @include mixin.smartphone {
+                top: 30px;
+                
+            }
     }
 
     &__loction {

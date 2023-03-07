@@ -1,3 +1,7 @@
+@use "../../foundation/mixin" as mixin;
+
+//PC版のスタイリング（一部スマホ版のマージンも設定する）
+
 .u-margin {
     &__top40 {
         margin-top: 40px;
@@ -21,10 +25,27 @@
 
     &__top125 {
         margin-top: 125px;
+
+        @include mixin.smartphone { 
+            margin-top: 50px;
+        }
+
     }
 
     &__left80 {
         margin-left: 80px;
+
+        @include mixin.smartphone { 
+            margin-left: 0;
+        }
+    }
+
+    &__left80 {
+        margin-left: 80px;
+
+        @include mixin.smartphone { 
+            margin-left: 0;
+        }
     }
 
     &__bottom6 {
@@ -34,6 +55,7 @@
     &__bottom90 {
         margin-bottom: 90px;
     }
+    
     &__topbottom30 {
         margin: 30px 0 30px 0;
     }
@@ -44,6 +66,24 @@
 
     &__topbottom60 {
         margin: 60px 0 60px 0;
+    }
+
+/////ここからスマホのスタイリング
+    &__top-phone30 {
+    @include mixin.smartphone {
+        margin-top: 30px;
+       }
+    }
+
+
+    &__left-phone30 {
+        @include mixin.smartphone {
+            margin-left: 30px;
+
+        }
+
+
+
     }
 
 

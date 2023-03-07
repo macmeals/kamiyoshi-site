@@ -1,5 +1,8 @@
 //写真のスタイリング（位置を調整するスタイリングは使わないこと
 
+@use "../../foundation/mixin" as mixin;
+
+
 .c-photo {
     &__firstview {
        width: 100vw;
@@ -8,6 +11,13 @@
     &__loction {
         width: 280px;
         height: 200px;
+
+          @include mixin.smartphone {
+             width: 140px;
+             height: 95px;
+
+          }
+
     }
     &__wagu {
         width: 440px;
